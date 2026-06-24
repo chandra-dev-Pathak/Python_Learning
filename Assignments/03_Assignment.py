@@ -265,11 +265,33 @@ print(result)
 
 # ----------------------------------------------------------------------------------
 # 20. Write a Python program to display all possible pairs of 3. 
+# Example: 1:3, 2:3, 3:3 , 2:1 , 2:2 ,2:3 , 3:1 ,3:2 ,3:3
 # ----------------------------------------------------------------------------------
+
+num = 123
+
+for i in range(1,4):
+    for j in range(1,4):
+        print(f"{i}:{j}", end=" ")
 
 # ----------------------------------------------------------------------------------
 # 21. Write a Python program to generate the pattern of the letter H. 
 # ----------------------------------------------------------------------------------
+
+for i in range(5):
+
+    for j in range(5):
+
+        if i == 2:
+            print("*", end="")
+
+        elif j == 0 or j == 4:
+            print("*", end="")
+
+        else:
+            print(" ", end="")
+
+    print()
 
 # ----------------------------------------------------------------------------------
 # 22. Write a Python program to find duplicate letters between two strings. Example: In "virat" and "rohit", the duplicate letter is "r". 
