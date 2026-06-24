@@ -297,13 +297,36 @@ for i in range(5):
 # 22. Write a Python program to find duplicate letters between two strings. Example: In "virat" and "rohit", the duplicate letter is "r". 
 # ----------------------------------------------------------------------------------
 
+str_one = "ragahw"
+str_two = "pathak"
+store = ""
+
+for i in str_one:
+    if i in str_two and i not in store:
+        store += i
+
+print(store)
+
 # ----------------------------------------------------------------------------------
 # 23. Write a Python program to display the squares of numbers from 1 to 10. 
 # ----------------------------------------------------------------------------------
 
+for i in range(1 , 11):
+    print(i * i)
+
 # ----------------------------------------------------------------------------------
 # 24. Given a string text = "python", calculate the sum of the indices of its characters without using the range() or len() functions. 
 # ----------------------------------------------------------------------------------
+
+text = 'python'
+index = 0
+count = 0
+
+
+for i in text:
+    count += index
+    index += 1
+print(count)  
 
 # ----------------------------------------------------------------------------------
 # 25. Given: text = "python programming" 
