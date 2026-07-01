@@ -334,25 +334,84 @@ print(count)
 # Constraint: Do not use indexing (text[i]) or slicing (text[:]). 
 # ----------------------------------------------------------------------------------
 
+text_two = "python programming" 
+store_two = ""
+counting = 0
+
+for i in text_two:
+    if i in "aeiou":
+        counting += 1
+print(counting)
+
 # ----------------------------------------------------------------------------------
 # 26. Given: text = "programming" 
 # Goal: Print all characters that repeat in the string. 
 # ----------------------------------------------------------------------------------
+
+text_two = "programming"
+
+freq = {}
+
+for h in text_two:
+    if h in freq:
+        freq[h] += 1
+    else:
+        freq[h] = 1
+
+for h in freq:
+    if freq[h] > 1:
+        print(h, end=" ")
 
 # ----------------------------------------------------------------------------------
 # 27. Given : 01275623 
 # Write a Python program to find and print the greatest character in the string. 
 # ----------------------------------------------------------------------------------
 
+# given = "01275623" 
+given = "01234567" 
+
+first = given[0]
+
+for ch in given:
+    if ch > first:
+        # print(ch)
+        first = ch
+
+print(first)
+
 # ----------------------------------------------------------------------------------
 # 28. Given : "rahul" 
 # Write a Python program to find and print the greatest character in the string. 
 # ----------------------------------------------------------------------------------
 
+text_3 = "rahul" 
+take = ""
+
+for i in text_3:
+    if i > take:
+        take = i
+        
+print(take)
+
 # ----------------------------------------------------------------------------------
 # 29. Given: text = "knowyourself" 
 # Goal: Find and print the first character that repeats. 
 # ----------------------------------------------------------------------------------
+
+text = "knowyourself"
+store = ""
+flag = False
+
+for ch in text:
+    if ch in store:
+        print("repeats word", ch)
+        Flag = True
+        break
+    else:
+        store += ch
+
+if flag == False:
+    print("no repeats word")
 
 # ----------------------------------------------------------------------------------
 # 30. Give : text=”if you think you can not do, you can not show think wisely”  
